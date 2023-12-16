@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namaste raect</title>
+</head>
+<body>
+    <div id="root"></div>
+        <!-- <h1>hello world !</h1>  //here we are creating H1 element tag without JS. 
+        If you want to create any element inside JS we should use document.createlement("element name"); -->
+        <!-- <script>
+            const heading = document.createElement("hi");
+            heading.innerHTML = "hello world!";
+
+           const root = document.getElementById("root");
+           root.appendChild(heading)
+        </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+<!-- in js if we want to create elelement we will use document.createElement with one argument.
+in react js if we want to create element we will use react.createElement with 3 arguments. -->
+
+<!-- in react create element first and then  create a root using reactDOM.createroot() -->
+<script>
+const heading = React.createElement("h1",{},"hello world! react");
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(heading);
+</script>
+</body>
+</html>
